@@ -129,5 +129,23 @@ input::placeholder {
 .rise_shine_details {
   font-size:x-small;
 }
+.submit-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  background-color: #3d6692;
+  color: white; 
+  padding: 10px 24px;
+  border: none; 
+  border-radius: 4px;
+  cursor: pointer; 
+  font-size: 16px; 
+}
+
+.submit-button:hover {
+  background-color: #1c2c79;
+}
 
 /*=================================================*/
