@@ -29,7 +29,9 @@ class Checkout extends Layout
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Product Thumbnail</td>
+                                        <td><div class="product-image-container">
+                                            <img src ="/highres-assets/product.jpg" alt="Product Image">
+                                        </div></td>
                                         <td>Lorem Widget</td>
                                         <td>1</td>
                                     </tr>
@@ -41,7 +43,7 @@ class Checkout extends Layout
                          <div class="frame__contents checkbox-spacing">
                             <input type="checkbox" id="beta_program_checkbox" name="beta_program_checkbox">
                             <label for="beta_program_checkbox">Join our “Rise & Shine” beta program</label>
-                            <p>With our “Rise & Shine” beta program, you get early access to new features, but they may not always work perfectly. You can change your beta preference at any time after you join.</p>
+                            <p class="rise_shine_details">With our “Rise & Shine” beta program, you get early access to new features, but they may not always work perfectly. You can change your beta preference at any time after you join.</p>
                         </div>
                     </div>
                     <div class="frame">
@@ -89,14 +91,6 @@ class Checkout extends Layout
                                     <input type="text" name="billing_address_last_name" id="billing_address_last_name" class="entry" value="Gauthier" size="17" maxlength="255" />
                                 </div>
                             </div>
-                            <!-- <div class="form-field form-field--required">
-                                <label class="form-field__label" for="billing_address_line1">Street Address: <span class="form-field__label-required"> (required)</span></label>
-                                <div class="form-field__contents">
-                                    <div class="textarea__container">
-                                        <textarea name="billing_address_line1" id="billing_address_line1" class="textarea" rows="2" cols="35"></textarea>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="form-field form-field--required">
                                 <label class="form-field__label" for="billing_address_line1">Street Address: <span class="form-field__label-required"> (required)</span></label>
                                 <div class="form-field__contents">

@@ -117,5 +117,17 @@ input::placeholder {
   color: #b5b4b4;
   font-style: italic;
 }
+.product-image-container {
+  display: flex;
+  width: 200px;
+  height: 100px;
+}
+.product-image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.rise_shine_details {
+  font-size:x-small;
+}
 
 /*=================================================*/
