@@ -111,3 +111,11 @@ main {
   border-bottom: 1px solid #eee;
   padding: 0.5rem;
 }
+
+/* Added by Jack Ivanisevic  ==============================*/
+input::placeholder {
+  color: #b5b4b4;
+  font-style: italic;
+}
+
+/*=================================================*/
