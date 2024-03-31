@@ -37,6 +37,13 @@ class Checkout extends Layout
                             </table>
                         </div>
                     </div>
+                     <div class="frame">
+                         <div class="frame__contents checkbox-spacing">
+                            <input type="checkbox" id="beta_program_checkbox" name="beta_program_checkbox">
+                            <label for="beta_program_checkbox">Join our “Rise & Shine” beta program</label>
+                            <p>With our “Rise & Shine” beta program, you get early access to new features, but they may not always work perfectly. You can change your beta preference at any time after you join.</p>
+                        </div>
+                    </div>
                     <div class="frame">
                         <h2 class="frame__title">Account Details</h2>
                         <div class="frame__contents">
