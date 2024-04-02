@@ -148,4 +148,19 @@ input::placeholder {
   background-color: #1c2c79;
 }
 
+.posts_page{
+  font-size:32pt;
+ font-style: italic;
+background-color: #666;
+color:#eee;
+padding: 10px;
+}
+article .article_title {
+  font-size: 32pt;
+  border-bottom:solid 5px #ff0000;
+}
+article footer{
+  font-style: italic;
+  font-weight: 700;
+}
 /*=================================================*/

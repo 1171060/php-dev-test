@@ -4,9 +4,8 @@ namespace silverorange\DevTest;
 
 class Context
 {
-    // TODO: You can add more properties to this class to pass values to templates
-
     public string $title = '';
-
+    public array $posts = [];
+    public ?Model\Post $post = null;
     public string $content = '';
 }
