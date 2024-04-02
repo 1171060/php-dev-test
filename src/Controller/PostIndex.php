@@ -24,26 +24,16 @@ class PostIndex extends Controller
 
     protected function loadData(): void
     {
-    $sql = 'SELECT p.id, p.title, p.body, p.created_at, p.modified_at, a.full_name as author_name FROM posts p INNER JOIN authors a ON p.author = a.id ORDER BY p.created_at DESC';
-
-    // Execute the query and fetch results
-    $stmt = $this->db->prepare($sql);
-    $stmt->execute();
-    $postsData = $stmt->fetchAll();
-
-
-    $this->posts = [];
-    foreach ($postsData as $postData) {
-        $post = new \silverorange\DevTest\Model\Post();
-        $post->id = $postData['id'];
-        $post->title = $postData['title'];
-        
-        $post->body = \Michelf\Markdown::defaultTransform($postData['body']);
-        $post->created_at = $postData['created_at'];
-        $post->modified_at = $postData['modified_at'];
-        $post->author = $postData['author_name'];
-        
-        $this->posts[] = $post; 
-    }
-}
+         $stmt = $this->db->prepare('SELECT p.id, p.title, a.full_name AS author_name FROM posts p INNER JOIN authors a ON p.author = a.id  ORDER BY p.created_at DESC');
+        $stmt->execute();
+        $posts = $stmt->fetchAll();
+        $this->posts = [];
+        foreach ($posts as $postData) {
+                $post = new \silverorange\DevTest\Model\Post();
+                $post->id = $postData['id'];
+                $post->title = $postData['title'];
+                $post->author = $postData['author_name'];
+                $this->posts[] = $post; 
+            }
+        }
 }
